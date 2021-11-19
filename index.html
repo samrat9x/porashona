@@ -1,869 +1,908 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>পড়াশোনা</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>পড়াশোনা</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 
 </head>
 <!--- body starts here  ---->
 <body onload="myFunction()">
-  <div id="loading">
-    <!-- Load the page -->
-  </div>
-  <!--- Notice Board ---->
-  <div id="popup">
+    <div id="loading">
+        <!-- Load the page -->
+    </div>
+    <!--- Notice Board ---->
+    <div id="popup">
+        <div class="clear"></div>
+        <p class="notice">
+            Notice!!!
+        </p>
+        <p class="content">
+            আগামী পরীক্ষার জন্য জীববিজ্ঞানের 2য় অধ্যায় আপলোড করা আছে। ডাউনলোড করে প্রশ্নগুলো ভাল করে দেখে নেবে। কোন সমস্যা থাকলে অবশ্যই জানাবে।
+        </p>
+    </div>
+    <!-- Head Section-->
+    <section id="id1" class="sect1">
+        <div class="logo">
+            <!--- Logo ---->
+            <img src="logo1.png" alt="logo">
+        </div>
+    </section>
+    <div class="notification">
+        <button onclick="widget()"><img src="./icon/bell.png" alt=""></button>
+    </div>
     <div class="clear"></div>
-    <p class="notice">
-      Notice!!!
-    </p>
-    <p class="content">
-      আগামী পরীক্ষার জন্য জীববিজ্ঞানের 2য় অধ্যায় আপলোড করা আছে। ডাউনলোড করে প্রশ্নগুলো ভাল করে দেখে নেবে। কোন সমস্যা থাকলে অবশ্যই জানাবে।
-    </p>
-  </div>
-  <!-- Head Section-->
-  <section id="id1" class="sect1">
-    <div class="logo">
-      <!--- Logo ---->
-      <img src="logo1.png" alt="logo">
+    <!--- Sidenavbar Starts Here  ---->
+    <div id="sideNav" class="menus">
+        <div class="logo">
+            <!--- Logo ---->
+            <img src="logo1.png" alt="logo">
+        </div>
+        <span onclick="study()"><img src="./icon/home.png" alt="">&nbsp;&nbsp;Home</span>
+        <span onclick="about()"><img src="./icon/about.png" alt="">&nbsp;&nbsp;About us</span>
+        <span onclick="contact()"><img src="./icon/contact.png" alt="">&nbsp;&nbsp;Contact</span>
+
     </div>
-  </section>
-  <div class="notification">
-    <button onclick="widget()"><img src="./icon/bell.png" alt=""></button>
-  </div>
-  <div class="clear"></div>
-  <!--- Sidenavbar Starts Here  ---->
-  <div id="sideNav" class="menus">
-    <div class="logo">
-      <!--- Logo ---->
-      <img src="logo1.png" alt="logo">
+    <div id="overlay" onclick="overlay()">
+        <button><img src="./icon/cross.png" alt=""></button>
     </div>
-    <span onclick="study()"><img src="./icon/home.png" alt="">&nbsp;&nbsp;Home</span>
-    <span onclick="about()"><img src="./icon/about.png" alt="">&nbsp;&nbsp;About us</span>
-    <span onclick="contact()"><img src="./icon/contact.png" alt="">&nbsp;&nbsp;Contact</span>
-
-  </div>
-  <div id="overlay" onclick="overlay()">
-    <button><img src="./icon/cross.png" alt=""></button>
-  </div>
-  <!--- Its a bottom menu ---->
-  <section class="bottom_menu">
-    <button id="activeStudy" onclick="study()"><img src="./icon/study.png" alt=""></button>
-    <button id="activeQuiz" onclick="QUIZ()"><img src="./icon/quiz.png" alt=""></button>
-    <button id="activeBlog" onclick="blog()"><img src="./icon/blog.png" alt=""></button>
-    <button id="burger" onclick="mnu()"><img src="./icon/menu.png" alt=""></button>
-  </section>
-  <!-- Back button bottom-->
-  <section id="goback" class="bottom_menu back">
-    <button onclick="QUIZ()"><img src="./icon/back.png" alt=""></button>
-    <button onclick="mnu()"><img src="./icon/menu.png" alt=""></button>
-  </section>
-  <!-- Back button bottom-->
-  <section id="goback2" class="bottom_menu back">
-    <button onclick="study()"><img src="./icon/back.png" alt=""></button>
-    <button onclick="mnu()"><img src="./icon/menu.png" alt=""></button>
-  </section>
-  <!--- Main section stats here ---->
-  <section id="main" class="main">
-    <section id="q1">
-      <h2 class="titled">CLASS 6</h2>
-
-
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
+    <!--- Its a bottom menu ---->
+    <section class="bottom_menu">
+        <button id="activeStudy" onclick="study()"><img src="./icon/study.png" alt=""></button>
+        <button id="activeQuiz" onclick="QUIZ()"><img src="./icon/quiz.png" alt=""></button>
+        <button id="activeBlog" onclick="blog()"><img src="./icon/blog.png" alt=""></button>
+        <button id="burger" onclick="mnu()"><img src="./icon/menu.png" alt=""></button>
     </section>
-    <section id="q2">
-      <h2 class="titled">CLASS 7</h2>
-
-
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
+    <!-- Back button bottom-->
+    <section id="goback" class="bottom_menu back">
+        <button onclick="QUIZ()"><img src="./icon/back.png" alt=""></button>
+        <button onclick="mnu()"><img src="./icon/menu.png" alt=""></button>
     </section>
-    <section id="q3">
-      <h2 class="titled">CLASS 8</h2>
-
-      <button class="accordion">MATH</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
-
-      <button class="accordion">SCIENCE</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
-
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
+    <!-- Back button bottom-->
+    <section id="goback2" class="bottom_menu back">
+        <button onclick="study()"><img src="./icon/back.png" alt=""></button>
+        <button onclick="mnu()"><img src="./icon/menu.png" alt=""></button>
     </section>
-    <section id="q4">
-      <h2 class="titled">SSC</h2>
+    <!--- Main section stats here ---->
+    <section id="main" class="main">
+        <section id="q1">
+            <h2 class="titled">CLASS 6</h2>
 
-      <button class="accordion">MATH</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
 
-      <button class="accordion">HIGHER MATH</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="q2">
+            <h2 class="titled">CLASS 7</h2>
 
-      <button class="accordion">PHYSICS</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
-      <button class="accordion">CHEMISTRY</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
-      <button class="accordion">BIOLOGY</button>
-      <div class="panel">
-        <div>
-          <span>অধ্যায়-১</span>
-          <a target="_blank" href="./ssc/biology/chapter1/set1/quiz.html">Set1</a>
+
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="q3">
+            <h2 class="titled">CLASS 8</h2>
+
+            <button class="accordion">MATH</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+
+            <button class="accordion">SCIENCE</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="q4">
+            <h2 class="titled">SSC</h2>
+
+            <button class="accordion">MATH</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+
+            <button class="accordion">HIGHER MATH</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+
+            <button class="accordion">PHYSICS</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+            <button class="accordion">CHEMISTRY</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+            <button class="accordion">BIOLOGY</button>
+            <div class="panel">
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a target="_blank" href="./ssc/biology/chapter1/set1/quiz.html">Set1</a>
+                </div>
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a href="#">Set1</a>
+                    <a href="#">Set2</a>
+                </div>
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a href="#">Set1</a>
+                </div>
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a href="#">Set1</a>
+                    <a href="#">Set2</a>
+                    <a href="#">Set3</a>
+                </div>
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a href="#">Set1</a>
+                    <a href="#">Set2</a>
+                    <a href="#">Set3</a>
+                    <a href="#">Set4</a>
+                    <a href="#">Set5</a>
+                </div>
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a href="#">Set1</a>
+                </div>
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a href="#">Set1</a>
+                </div>
+                <div>
+                    <span>অধ্যায়-১</span>
+                    <a href="#">Set1</a>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="q5">
+            <h2 class="titled">HSC</h2>
+
+            <button class="accordion">Higher Math</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+
+            <button class="accordion">ICT</button>
+            <div class="panel">
+                <a href="#">অধ্যায়-১</a>
+                <a href="#">অধ্যায়-২</a>
+                <a href="#">অধ্যায়-৩</a>
+                <a href="#">অধ্যায়-৪</a>
+                <a href="#">অধ্যায়-৫</a>
+                <a href="#">অধ্যায়-৬</a>
+                <a href="#">অধ্যায়-৭</a>
+                <a href="#">অধ্যায়-৮</a>
+                <a href="#">অধ্যায়-৯</a>
+                <a href="#">অধ্যায়-১০</a>
+                <a href="#">অধ্যায়-১১</a>
+                <a href="#">অধ্যায়-১২</a>
+                <a href="#">অধ্যায়-১৩</a>
+                <a href="#">অধ্যায়-১৪</a>
+            </div>
+
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+
+        <section id="b1">
+            <table>
+                <caption>গনিত (মাধ্যমিক)</caption>
+                <tr>
+                    <th>অধ্যায়</th>
+                    <th>সৃজনশীল</th>
+                    <th>MCQ</th>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-1st-chapter-real-number.pdf">বাস্তব সংখ্যা</a></td>
+                    <td><a href="">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-২	</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-2nd-chapterc2a0set-and-function.pdf">সেট ও ফাংশন</a></td>
+                    <td><a href=""></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৩</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-3rd-chapter-algebraic-expressions.pdf">বীজগানিতিক রাশি</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৪</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-4th-chapter-exponents-and-logarithms.pdf">সূচক ও লগারিদম</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৫</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-5th-chapter-equations-with-one-variable.pdf">এক চলক বিশিষ্ট সমীকরণ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৬</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-6th-chapter-lines-angles-and-triangles.pdf">রেখা, কোণ ও ত্রিভুজ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৭</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-7th-chapter-practical-geometry.pdf">ব্যবহারিক জ্যামিতি</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৮</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-8th-chapter-circle.pdf">বৃত্ত</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৯</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-9th-chapter-trigonometric-ratio.pdf">ত্রিকোণমিতিক অনুপাত</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১০</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-10th-chapter-distance-and-height.pdf">দুরত্ব ও উচ্চতা</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১১</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-11th-chapterc2a0algebraic-ratio-and-proportion.pdf">বীজগনিতীয় অনুপাত ও সমানুপাত</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১২</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-12th-chapter-simple-simultaneous-equations-with-two-variables.pdf">দুই চলক বিশিষ্ট সরল সহসমীকরণ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১৩</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-13th-chapter-finite-series.pdf">সসীম ধারা</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১৪</td>
+                    <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-14th-chapter-ratio-similarity-and-symmetry.pdf">অনুপাত, সদৃশতা ও </a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+            </table>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="b2">
+            <table>
+                <caption>উচ্চতর গনিত (মাধ্যমিক)</caption>
+                <tr>
+                    <th>অধ্যায়</th>
+                    <th>সৃজনশীল</th>
+                    <th>MCQ</th>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-biology-notes-1st-chapter-lesson-on-life.pdf"></a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-ssc-mcq-question-ans-lesson-on-life.pdf"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-২	</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-2nd-chapter-cell-and-tissue-of-organism.pdf"></a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/2nd-chapter-sc-mcq-question-ans-cell-and-tissue-of-organism.pdf"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৩</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৪</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৫</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৬</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৭</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৮</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৯</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১০</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১১</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১২</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১৩</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১৪</td>
+                    <td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+            </table>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="b3">
+            <table>
+                <caption>পদার্থ (মাধ্যমিক)</caption>
+                <tr>
+                    <th>অধ্যায়</th>
+                    <th>সৃজনশীল</th>
+                    <th>MCQ</th>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/chapter-1-physical-quantities-and-measurements.pdf">ভৌত রাশি ও পরিমাপ</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-concept-of-chemistry.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-২</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/chapter-2-motion.pdf">গতি</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-2-states-of-matter.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৩</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-3-force.pdf">বল</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-3-structure-of-matter.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৪</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-4-work-power-and-energy.pdf">কাজ, ক্ষমতা ও শক্তি</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৫</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-5c2a0pressure-and-states-of-matter.pdf">পদার্থের অবস্থা ও চাপ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৬</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-6-effect-of-heat-on-substance.pdf">বস্তুর উপর তাপের প্রভাব</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৭</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-7-waves-and-sound.pdf">তরঙ্গ ও শব্দ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৮</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-8-reflection-of-light.pdf">আলোর প্রতিফলন</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৯</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-9-refraction-of-light.pdf">আলোর প্রতিসরণ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১০</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-10-statical-electricity.pdf">স্থির তড়িৎ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১১</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-11-current-electricity.pdf">চল তড়িৎ</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১২</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-12-magnetic-effect-of-current.pdf">তড়িতের চৌম্বক ক্রিয়া</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১২</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-13-modern-physics-and-electronics.pdf">আধুনিক পদার্থবিজ্ঞান ও ইলেকট্রিক্স</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১২</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-14-physics-to-save-life.pdf">জীবন বাঁচাতে পদার্থবিজ্ঞান</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+            </table>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="b4">
+            <table>
+                <caption>রসায়ন (মাধ্যমিক)</caption>
+                <tr>
+                    <th>অধ্যায়</th>
+                    <th>সৃজনশীল</th>
+                    <th>MCQ</th>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-1st-chapter-the-concept-of-chemistry.pdf">রসায়নের ধারণা</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-concept-of-chemistry.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-২</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-2nd-chapter-the-states-of-matter.pdf">পদার্থের অবস্থা</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-2-states-of-matter.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৩</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-3rd-chapter-the-structure-of-matter.pdf">পদার্থের গঠন</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-3-structure-of-matter.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৪</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-4th-chapter-periodic-table.pdf">পর্যায় সারণি</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৫</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-5th-chapter-chemical-bonds.pdf">রাসায়নিক বন্ধন</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৬</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-6th-chapter-concept-of-mole-and-chemical-calculations.pdf">মোলের ধারণা ও রাসায়নিক গণনা</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৭</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-7th-chapter-chemical-reaction.pdf">রাসায়নিক বিক্রিয়া</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৮</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-8th-chapter-chemistry-and-energy.pdf">রসায়ন ও শক্তি</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৯</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-9th-chapter-acid-base-balance.pdf">এসিড-ক্ষার সমতা</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১০</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-10th-chapter-mineral-resources-metal-nonmetal.pdf">খনিজ সম্পদ ধাতু-অধাতু</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১১</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-11th-chapter-mineral-resources-fossil.pdf">খনিজ সম্পদ জীবাশ্ম</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১২</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-12th-chapter-chemistry-in-our-life.pdf">আমাদের জীবনে রসায়ন</a></td>
+                    <td><a href="#"></a></td>
+                </tr>
+            </table>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <section id="b5" class="sect2">
+            <table>
+                <caption>জীববিজ্ঞান (মাধ্যমিক)</caption>
+                <tr>
+                    <th>অধ্যায়</th>
+                    <th>সৃজনশীল</th>
+                    <th>MCQ</th>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-biology-notes-1st-chapter-lesson-on-life.pdf">জীবন পাঠ</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-ssc-mcq-question-ans-lesson-on-life.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-২	</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-2nd-chapter-cell-and-tissue-of-organism.pdf">জীবকোষ ও টিস্যু</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/2nd-chapter-sc-mcq-question-ans-cell-and-tissue-of-organism.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৩</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-3rd-chapter-cell-division.pdf">কোষ বিভাজন</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৪</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-4th-chapter-bioenergetics.pdf">জীবনীশক্তি</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৫</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-5th-chapter-food-nutrition-and-digestion.pdf">খাদ্য, পুষ্টি ও পরিপাক</a></td>
+                    <td><a href="">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৬</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-6th-chapter-transport-in-organisms.pdf">জীবে পরিবহন</a></td>
+                    <td><a href="https://teachingbd.files.wordpress.com/2015/02/6th-chapter-ssc-mcq-question-ans-transport-in-organisms.pdf">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৭</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-7th-chapter-exchange-of-gases.pdf">গ্যাসীয় বিনিময়</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৮</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-8th-chapter-human-excretion.pdf">রেচন প্রক্রিয়া</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-৯</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-9th-chapter-firmness-and-locomotion.pdf">দৃঢ়তা প্রদান ও চলন</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১০</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-10th-chapter-co-ordination-process-in-animal.pdf">সমন্বয়</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১১</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-11th-chapter-reproduction.pdf">জীবের প্রজনন</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১২</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-12th-chapter-heredity-in-organisms-and-evolution.pdf">জীবের বংশগতি ও বিবর্তন</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১৩</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-13th-chapter-environment-around-life.pdf">জীবের পরিবেশ</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+                <tr>
+                    <td>অধ্যায়-১৪</td>
+                    <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-14th-chapter-biotechnology.pdf">জীব প্রযুক্তি</a></td>
+                    <td><a href="#">MCQ</a></td>
+                </tr>
+            </table>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+
+
+        <section id="b6">
+            <h2 class="titled">QUIZ</h2>
+            <div class="topic">
+                <span class="moto" onclick="q5()"><img src="./icon/hsc.png"><span>HSC</span></span>
+                <span class="moto" onclick="q4()"><img src="./icon/ssc.png"><span>SSC</span></span>
+                <span class="moto" onclick="q3()"><img src="./icon/eight.png"><span>Class 8</span></span>
+                <span class="moto" onclick="q2()"><img src="./icon/seven.png"><span>Class 7</span></span>
+                <span class="moto" onclick="q1()"><img src="./icon/six.png"><span>Class 6</span></span>
+            </div>
+
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+        <!-------------  বিজ্ঞান সমাচার ----------->
+        <section id="b7">
+            <h2 class="titled">BLOG</h2>
+            <ol class="list">
+                <p class="catagory">
+                    অ
+                </p>
+                <li><a href="https://bigganblog.org/2021/10/%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A7%9F%E0%A7%8B%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%B0%E0%A7%87%E0%A6%9C%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE/" target="_blank">অ্যান্টিবায়োটিক রেসিস্টেন্ট কি?</a></li>
+                <p class="catagory">
+                    প
+                </p>
+                <li><a href="https://www.jugantor.com/lifestyle/64199/%E0%A6%AA%E0%A7%87%E0%A6%81%E0%A7%9F%E0%A6%BE%E0%A6%9C-%E0%A6%95%E0%A6%BE%E0%A6%9F%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A7%87%E0%A6%A8-%E0%A6%9A%E0%A7%8B%E0%A6%96%E0%A7%87-%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%86%E0%A6%B8%E0%A7%87" target="_blank">পেঁয়াজ কাটলে চোখে পানি আসে কেন?</a></li>
+                <p class="catagory">
+                    হ
+                </p>
+                <li><a href="https://bigyansomachar.blogspot.com/2021/10/blog-post_17.html" target="_blank">হিমোগ্লোবিন কি?</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ol>
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+        </section>
+
+        <section id="b8">
+            <h2 class="titled">
+                STUDY
+            </h2>
+            <div class="topic">
+                <span class="moto"><img src="./icon/hsc.png"><span>HSC</span>
+                    <span class="layer">
+                        <button onclick="f10()">
+                            HIGHER MATH
+                        </button>
+                        <button onclick="f9()">ICT</button>
+                    </span>
+                </span>
+                <span class="moto"><img src="./icon/ssc.png">
+                    <span>SSC</span>
+                    <span class="layer">
+                        <button onclick="f1()">MATH</button>
+                        <button onclick="f2()">HIGHER MATH</button>
+                        <button onclick="f3()">PHYSICS</button>
+                        <button onclick="f4()">CHEMISTRY</button>
+                        <button onclick="f5()">BIOLOGY</button>
+                    </span>
+                </span>
+                <span class="moto"><img src="./icon/eight.png"><span>Class 8</span>
+                    <span class="layer"></span>
+                </span>
+                <span class="moto"><img src="./icon/seven.png"><span>Class 7</span>
+                    <span class="layer"></span>
+                </span>
+                <span class="moto"><img src="./icon/six.png"><span>Class 6</span>
+                    <span class="layer"></span>
+                </span>
+            </div>
+
+            <footer class="footer">
+                <p>
+                    &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+                </p>
+                <p>
+                    &copy; 2021 পড়াশোনা
+                </p>
+            </footer>
+
+        </section>
+    </section>
+
+    <section id="about" onclick="about()">
+        <div class="main">
+            <p class="design">Designed by</p>
+            <div class="card">
+                <div class="memage">
+                    <img src="me.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p class="name">
+                        SAMRAT AHMAD
+                    </p>
+                    <p class="add">
+                        Feni, Bangladesh.
+                    </p>
+                    <p>
+                        Frontend & Backend Developer
+                    </p>
+                    <p class="hire">
+                        <button>Hire Me</button>
+                    </p>
+                </div>
+                <div class="skill">
+                    <p>
+                        Skills
+                    </p>
+                    <p class="todo">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+                <span>PHP</span>
+                <span>LARAVEL</span>
+                        <span>REACT JS</span>
+                    </p>
+                </div>
+
+            </div>
         </div>
-        <div>
-          <span>অধ্যায়-১</span>
-          <a href="#">Set1</a>
-          <a href="#">Set2</a>
+    </section>
+
+    <section id="contact" onclick="contact()">
+        <div class="main">
+            <form action="#" method="post" accept-charset="utf-8">
+                <p>
+                    Email : <br>
+                    <input class="active" type="email">
+                </p>
+                <p>
+                    Subject : <br>
+                    <input class="active" type="text">
+                </p>
+                <p>
+                    Message : <br>
+                    <textarea class="active" name="" id=rows="15" cols="40"></textarea>
+                </p>
+                <p class="submit">
+                    <input type="reset" value="RESET"><input type="submit" name="" id="" value="SUBMIT" />
+                </p>
+            </form>
         </div>
-        <div>
-          <span>অধ্যায়-১</span>
-          <a href="#">Set1</a>
-        </div>
-        <div>
-          <span>অধ্যায়-১</span>
-          <a href="#">Set1</a>
-          <a href="#">Set2</a>
-          <a href="#">Set3</a>
-        </div>
-        <div>
-          <span>অধ্যায়-১</span>
-          <a href="#">Set1</a>
-          <a href="#">Set2</a>
-          <a href="#">Set3</a>
-          <a href="#">Set4</a>
-          <a href="#">Set5</a>
-        </div>
-        <div>
-          <span>অধ্যায়-১</span>
-          <a href="#">Set1</a>
-        </div>
-        <div>
-          <span>অধ্যায়-১</span>
-          <a href="#">Set1</a>
-        </div>
-        <div>
-          <span>অধ্যায়-১</span>
-          <a href="#">Set1</a>
-        </div>
-      </div>
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
     </section>
-    <section id="q5">
-      <h2 class="titled">HSC</h2>
+    <script src="porashona.js">
 
-      <button class="accordion">Higher Math</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
-
-      <button class="accordion">ICT</button>
-      <div class="panel">
-        <a href="#">অধ্যায়-১</a>
-        <a href="#">অধ্যায়-২</a>
-        <a href="#">অধ্যায়-৩</a>
-        <a href="#">অধ্যায়-৪</a>
-        <a href="#">অধ্যায়-৫</a>
-        <a href="#">অধ্যায়-৬</a>
-        <a href="#">অধ্যায়-৭</a>
-        <a href="#">অধ্যায়-৮</a>
-        <a href="#">অধ্যায়-৯</a>
-        <a href="#">অধ্যায়-১০</a>
-        <a href="#">অধ্যায়-১১</a>
-        <a href="#">অধ্যায়-১২</a>
-        <a href="#">অধ্যায়-১৩</a>
-        <a href="#">অধ্যায়-১৪</a>
-      </div>
-
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-
-    <section id="b1">
-      <table>
-        <caption>গনিত (মাধ্যমিক)</caption>
-        <tr>
-          <th>অধ্যায়</th>
-          <th>সৃজনশীল</th>
-          <th>MCQ</th>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-1st-chapter-real-number.pdf">বাস্তব সংখ্যা</a></td>
-          <td><a href="">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-২	</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-2nd-chapterc2a0set-and-function.pdf">সেট ও ফাংশন</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৩</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-3rd-chapter-algebraic-expressions.pdf">বীজগানিতিক রাশি</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৪</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-4th-chapter-exponents-and-logarithms.pdf">সূচক ও লগারিদম</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৫</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-5th-chapter-equations-with-one-variable.pdf">এক চলক বিশিষ্ট সমীকরণ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৬</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-6th-chapter-lines-angles-and-triangles.pdf">রেখা, কোণ ও ত্রিভুজ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৭</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-7th-chapter-practical-geometry.pdf">ব্যবহারিক জ্যামিতি</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৮</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-8th-chapter-circle.pdf">বৃত্ত</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৯</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-9th-chapter-trigonometric-ratio.pdf">ত্রিকোণমিতিক অনুপাত</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১০</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-10th-chapter-distance-and-height.pdf">দুরত্ব ও উচ্চতা</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১১</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-11th-chapterc2a0algebraic-ratio-and-proportion.pdf">বীজগনিতীয় অনুপাত ও সমানুপাত</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১২</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-12th-chapter-simple-simultaneous-equations-with-two-variables.pdf">দুই চলক বিশিষ্ট সরল সহসমীকরণ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১৩</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-13th-chapter-finite-series.pdf">সসীম ধারা</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১৪</td>
-          <td><a href="https://teachingbd24.files.wordpress.com/2018/04/ssc-mathematics-note-14th-chapter-ratio-similarity-and-symmetry.pdf">অনুপাত, সদৃশতা ও </a></td>
-          <td><a href="#"></a></td>
-        </tr>
-      </table>
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-    <section id="b2">
-      <table>
-        <caption>উচ্চতর গনিত (মাধ্যমিক)</caption>
-        <tr>
-          <th>অধ্যায়</th>
-          <th>সৃজনশীল</th>
-          <th>MCQ</th>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-biology-notes-1st-chapter-lesson-on-life.pdf"></a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-ssc-mcq-question-ans-lesson-on-life.pdf"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-২	</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-2nd-chapter-cell-and-tissue-of-organism.pdf"></a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/2nd-chapter-sc-mcq-question-ans-cell-and-tissue-of-organism.pdf"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৩</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৪</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৫</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৬</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৭</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৮</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৯</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১০</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১১</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১২</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১৩</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১৪</td>
-          <td><a href="#"></a></td>
-          <td><a href="#"></a></td>
-        </tr>
-      </table>
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-    <section id="b3">
-      <table>
-        <caption>পদার্থ (মাধ্যমিক)</caption>
-        <tr>
-          <th>অধ্যায়</th>
-          <th>সৃজনশীল</th>
-          <th>MCQ</th>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/chapter-1-physical-quantities-and-measurements.pdf">ভৌত রাশি ও পরিমাপ</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-concept-of-chemistry.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-২</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/chapter-2-motion.pdf">গতি</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-2-states-of-matter.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৩</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-3-force.pdf">বল</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-3-structure-of-matter.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৪</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-4-work-power-and-energy.pdf">কাজ, ক্ষমতা ও শক্তি</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৫</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-5c2a0pressure-and-states-of-matter.pdf">পদার্থের অবস্থা ও চাপ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৬</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-6-effect-of-heat-on-substance.pdf">বস্তুর উপর তাপের প্রভাব</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৭</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-7-waves-and-sound.pdf">তরঙ্গ ও শব্দ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৮</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-8-reflection-of-light.pdf">আলোর প্রতিফলন</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৯</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-9-refraction-of-light.pdf">আলোর প্রতিসরণ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১০</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-10-statical-electricity.pdf">স্থির তড়িৎ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১১</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-11-current-electricity.pdf">চল তড়িৎ</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১২</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-12-magnetic-effect-of-current.pdf">তড়িতের চৌম্বক ক্রিয়া</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১২</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-13-modern-physics-and-electronics.pdf">আধুনিক পদার্থবিজ্ঞান ও ইলেকট্রিক্স</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১২</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/08/ssc-physics-note-chapter-14-physics-to-save-life.pdf">জীবন বাঁচাতে পদার্থবিজ্ঞান</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-      </table>
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-    <section id="b4">
-      <table>
-        <caption>রসায়ন (মাধ্যমিক)</caption>
-        <tr>
-          <th>অধ্যায়</th>
-          <th>সৃজনশীল</th>
-          <th>MCQ</th>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-1st-chapter-the-concept-of-chemistry.pdf">রসায়নের ধারণা</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-concept-of-chemistry.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-২</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-2nd-chapter-the-states-of-matter.pdf">পদার্থের অবস্থা</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-2-states-of-matter.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৩</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-3rd-chapter-the-structure-of-matter.pdf">পদার্থের গঠন</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/chapter-3-structure-of-matter.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৪</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-4th-chapter-periodic-table.pdf">পর্যায় সারণি</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৫</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-5th-chapter-chemical-bonds.pdf">রাসায়নিক বন্ধন</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৬</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-6th-chapter-concept-of-mole-and-chemical-calculations.pdf">মোলের ধারণা ও রাসায়নিক গণনা</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৭</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-7th-chapter-chemical-reaction.pdf">রাসায়নিক বিক্রিয়া</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৮</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-8th-chapter-chemistry-and-energy.pdf">রসায়ন ও শক্তি</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৯</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-9th-chapter-acid-base-balance.pdf">এসিড-ক্ষার সমতা</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১০</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-10th-chapter-mineral-resources-metal-nonmetal.pdf">খনিজ সম্পদ ধাতু-অধাতু</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১১</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-11th-chapter-mineral-resources-fossil.pdf">খনিজ সম্পদ জীবাশ্ম</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১২</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-chemistry-notes-12th-chapter-chemistry-in-our-life.pdf">আমাদের জীবনে রসায়ন</a></td>
-          <td><a href="#"></a></td>
-        </tr>
-      </table>
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-    <section id="b5" class="sect2">
-      <table>
-        <caption>জীববিজ্ঞান (মাধ্যমিক)</caption>
-        <tr>
-          <th>অধ্যায়</th>
-          <th>সৃজনশীল</th>
-          <th>MCQ</th>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/11/ssc-biology-notes-1st-chapter-lesson-on-life.pdf">জীবন পাঠ</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/1st-chapter-ssc-mcq-question-ans-lesson-on-life.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-২	</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-2nd-chapter-cell-and-tissue-of-organism.pdf">জীবকোষ ও টিস্যু</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/2nd-chapter-sc-mcq-question-ans-cell-and-tissue-of-organism.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৩</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-3rd-chapter-cell-division.pdf">কোষ বিভাজন</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৪</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-4th-chapter-bioenergetics.pdf">জীবনীশক্তি</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৫</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-5th-chapter-food-nutrition-and-digestion.pdf">খাদ্য, পুষ্টি ও পরিপাক</a></td>
-          <td><a href="">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৬</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-6th-chapter-transport-in-organisms.pdf">জীবে পরিবহন</a></td>
-          <td><a href="https://teachingbd.files.wordpress.com/2015/02/6th-chapter-ssc-mcq-question-ans-transport-in-organisms.pdf">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৭</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-7th-chapter-exchange-of-gases.pdf">গ্যাসীয় বিনিময়</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৮</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-8th-chapter-human-excretion.pdf">রেচন প্রক্রিয়া</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-৯</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-9th-chapter-firmness-and-locomotion.pdf">দৃঢ়তা প্রদান ও চলন</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১০</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-10th-chapter-co-ordination-process-in-animal.pdf">সমন্বয়</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১১</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-11th-chapter-reproduction.pdf">জীবের প্রজনন</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১২</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-12th-chapter-heredity-in-organisms-and-evolution.pdf">জীবের বংশগতি ও বিবর্তন</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১৩</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-13th-chapter-environment-around-life.pdf">জীবের পরিবেশ</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-        <tr>
-          <td>অধ্যায়-১৪</td>
-          <td><a href="https://shoutmecrunchblog.files.wordpress.com/2018/12/ssc-biology-notes-14th-chapter-biotechnology.pdf">জীব প্রযুক্তি</a></td>
-          <td><a href="#">MCQ</a></td>
-        </tr>
-      </table>
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-
-
-    <section id="b6">
-      <h2 class="titled">QUIZ</h2>
-      <div class="topic">
-        <span class="moto" onclick="q5()"><img src="./icon/hsc.png"><span>HSC</span></span>
-        <span class="moto" onclick="q4()"><img src="./icon/ssc.png"><span>SSC</span></span>
-        <span class="moto" onclick="q3()"><img src="./icon/eight.png"><span>Class 8</span></span>
-        <span class="moto" onclick="q2()"><img src="./icon/seven.png"><span>Class 7</span></span>
-        <span class="moto" onclick="q1()"><img src="./icon/six.png"><span>Class 6</span></span>
-      </div>
-
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-    <!-------------  বিজ্ঞান সমাচার ----------->
-    <section id="b7">
-      <h2 class="titled">BLOG</h2>
-      <ol class="list">
-        <p class="catagory">
-          অ
-        </p>
-        <li><a href="https://bigganblog.org/2021/10/%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A7%9F%E0%A7%8B%E0%A6%9F%E0%A6%BF%E0%A6%95-%E0%A6%B0%E0%A7%87%E0%A6%9C%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE/" target="_blank">অ্যান্টিবায়োটিক রেসিস্টেন্ট কি?</a></li>
-        <p class="catagory">
-          প
-        </p>
-        <li><a href="https://www.jugantor.com/lifestyle/64199/%E0%A6%AA%E0%A7%87%E0%A6%81%E0%A7%9F%E0%A6%BE%E0%A6%9C-%E0%A6%95%E0%A6%BE%E0%A6%9F%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A7%87%E0%A6%A8-%E0%A6%9A%E0%A7%8B%E0%A6%96%E0%A7%87-%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%86%E0%A6%B8%E0%A7%87" target="_blank">পেঁয়াজ কাটলে চোখে পানি আসে কেন?</a></li>
-        <p class="catagory">
-          হ
-        </p>
-        <li><a href="https://bigyansomachar.blogspot.com/2021/10/blog-post_17.html" target="_blank">হিমোগ্লোবিন কি?</a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ol>
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-    </section>
-
-    <section id="b8">
-      <h2 class="titled">
-        STUDY
-      </h2>
-      <div class="topic">
-        <span class="moto"><img src="./icon/hsc.png"><span>HSC</span>
-          <span class="layer">
-            <button onclick="f10()">
-              HIGHER MATH
-            </button>
-            <button onclick="f9()">ICT</button>
-          </span>
-        </span>
-        <span class="moto"><img src="./icon/ssc.png">
-          <span>SSC</span>
-          <span class="layer">
-            <button onclick="f1()">MATH</button>
-            <button onclick="f2()">HIGHER MATH</button>
-            <button onclick="f3()">PHYSICS</button>
-            <button onclick="f4()">CHEMISTRY</button>
-            <button onclick="f5()">BIOLOGY</button>
-          </span>
-        </span>
-        <span class="moto"><img src="./icon/eight.png"><span>Class 8</span>
-          <span class="layer"></span>
-        </span>
-        <span class="moto"><img src="./icon/seven.png"><span>Class 7</span>
-          <span class="layer"></span>
-        </span>
-        <span class="moto"><img src="./icon/six.png"><span>Class 6</span>
-          <span class="layer"></span>
-        </span>
-      </div>
-
-      <footer class="footer">
-        <p>
-          &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
-        </p>
-        <p>
-          &copy; 2021 পড়াশোনা
-        </p>
-      </footer>
-
-    </section>
-  </section>
-
-  <section id="about" onclick="about()">
-    <div class="main">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus recusandae nam, molestiae minima eos suscipit quam aliquam ipsum dolores provident mollitia tempore deserunt ea doloribus placeat natus. Possimus, cum, odit!
-      </p>
-    </div>
-  </section>
-
-  <section id="contact" onclick="contact()">
-    <div class="main">
-      <form action="#" method="post" accept-charset="utf-8">
-          <p>Email : <br>
-          <input class="active" type="email"></p>
-          <p>Subject : <br>
-          <input class="active" type="text"></p>
-          <p>Message : <br>
-          <textarea class="active" name="" id= rows="15" cols="40"></textarea></p>
-          <p class="submit"><input type="reset" value="RESET"><input type="submit" name="" id="" value="SUBMIT" /></p>
-      </form>
-    </div>
-  </section>
-  <script src="porashona.js">
-
-  </script>
+    </script>
 </body>
 </html>
