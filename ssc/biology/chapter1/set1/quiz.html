@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>পড়াশোনা</title>
+  <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style2.css">
+  <!-- FontAweome CDN Link for Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body onload="myFunction()">
+  <div id="loading">
+  </div>
+  <!-- start Quiz button -->
+  <div id="button" class="start_btn">
+    <button>Start Quiz</button>
+  </div>
+  <div id="goback">
+    <a href="../../../../index.html">Home</a>
+  </div>
+
+  <!-- Info Box -->
+  <div class="info_box">
+    <div class="info-title">
+      <p>কুইজ টুইজের নিয়মাবলি</p>
+    </div>
+    <div class="info-list">
+      <div class="info">
+        1. প্রতিটি প্রশ্নের জন্য <span>১৫ সেকেন্ড</span> করে সময় পাবেন।
+      </div>
+      <div class="info">
+        2. কোন প্রশ্নের উত্তর একবার সিলেক্ট করে ফেললে তা আর আনসিলেক্ট করা যাবেনা।
+      </div>
+      <div class="info">
+        3. নির্ধারিত সময় শেষ হয়ে গেলে প্রশ্নোত্তর নেওয়া হয়না।
+      </div>
+      <div class="info">
+        4. কুইজ চলাকালীন সময় কুইজ থেকে বের হওয়া যাবেনা।
+      </div>
+      <div class="info">
+        5. প্রতিটি সঠিক উত্তরের জন্য <span>১ </span>নাম্বার পাবেন।
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+  <!-- Quiz Box -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">
+        কুইজ-টুইজ
+      </div>
+      <div class="timer">
+        <div class="time_left_txt">
+          Time Left
+        </div>
+        <div class="timer_sec">
+          15
+        </div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- Here I've inserted question from JavaScript -->
+      </div>
+      <div class="option_list">
+        <!-- Here I've inserted options from JavaScript -->
+      </div>
+    </section>
+
+    <!-- footer of Quiz Box -->
+    <footer>
+      <div class="total_que">
+        <!-- Here I've inserted Question Count Number from JavaScript -->
+      </div>
+      <button class="next_btn">Next Que</button>
+    </footer>
+  </div>
+
+  <!-- Result Box -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">
+      You've completed the Quiz!
+    </div>
+    <div class="score_text">
+      <!-- Here I've inserted Score Result from JavaScript -->
+    </div>
+    <div class="buttons">
+      <button class="restart">Replay</button>
+      <button class="quit">Quit</button>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>
+      &copy; 2021 পড়াশোনা&nbsp;
+    </span>
+    <span>|</span>
+    <span>
+      &nbsp;<a target="_blank" href="https://samrat-portfolio.netlify.app">Samrat</a>
+    </span>
+  </div>
+  <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+  <script src="questions.js"></script>
+
+  <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+  <script src="script.js"></script>
+
+</body>
+</html>
