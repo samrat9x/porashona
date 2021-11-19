@@ -260,6 +260,7 @@ function QUIZ() {
   document.getElementById('activeQuiz').style.background = '#000';
   document.getElementById('main').style.display = 'block';
   document.getElementById('about').style.display = 'none';
+   document.getElementById('contact').style.display = 'none'; 
 
 
   mnu2();
@@ -287,6 +288,7 @@ function blog() {
   document.getElementById('activeQuiz').style.background = 'transparent';
   document.getElementById('main').style.display = 'block';
   document.getElementById('about').style.display = 'none';
+   document.getElementById('contact').style.display = 'none'; 
   mnu2();
 }
 
