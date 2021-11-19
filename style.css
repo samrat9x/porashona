@@ -497,6 +497,42 @@ a {
 #contact .main{
   padding: 20px;
 }
+
+#contact .main form{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#contact .main input,textarea{
+    padding: 10px;
+    width:100%;
+    border-radius: 10px;
+    border: 1px solid #f00056;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 10px;
+    color: grey;
+    
+}
+#contact .main .active:focus{
+    border: 1px solid #5fdba7;
+}
+#contact .submit{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.submit input{
+    flex: 40%;
+    margin: 0 10px;
+    background: #f00056;
+    color: #fff;
+   }
+#contact textarea{
+    resize: none;
+    height: 150px;
+}
 /* Footer Section */
 .footer {
   margin-bottom: 40px;
