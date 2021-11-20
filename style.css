@@ -491,10 +491,10 @@ a {
 }
 
 #about .main {
-       border-radius: 100px 100px 0 0;
+    border-radius: 100px 100px 0 0;
     padding: 20px;
-   background-image: linear-gradient(to right top, #3a0145, #560264, #740384, #9402a5, #b500c7);
-   box-shadow: 0px 0px 5px #000;
+    background-image: linear-gradient(to right top, #3a0145, #560264, #740384, #9402a5, #b500c7);
+    border-top: 5px solid #24203b;
 }
 
 #contact .main {
@@ -532,13 +532,15 @@ a {
     margin: 0 10px;
     background: #f00056;
     color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #contact textarea {
     resize: none;
     height: 150px;
 }
 
-#about .main .design{
+#about .main .design {
     text-align: center;
     font-size: 12px;
     font-family: 'Poppins',Sans-Serif;
@@ -551,7 +553,8 @@ a {
     background: #24203b;
     border-radius: 10px;
     color: #f9f9ff;
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #about .memage {
     margin-bottom: 15px;
@@ -584,7 +587,7 @@ a {
     font-size: 17px;
     font-family: 'Poppins',Sans-Serif;
 }
-#about .content .hire{
+#about .content .hire {
     padding: 20px;
 }
 #about .content button {
@@ -596,16 +599,16 @@ a {
     color: #fafafa;
     outline: none;
 }
-#about .skill{
+#about .skill {
     background: #1f1b36;
     padding: 15px;
     font-family: 'Poppins',Sans-Serif;
 }
-#about .skill p{
+#about .skill p {
     text-align: left;
-    padding-bottom: 10px ;
+    padding-bottom: 10px;
 }
-#about .skill p span{
+#about .skill p span {
     font-size: 14px;
     padding: 5px 10px;
     margin: 5px 0;
