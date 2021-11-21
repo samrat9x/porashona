@@ -6,118 +6,157 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>myTask</title>
     <style type="text/css" media="all">
-      *{
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-      }
-      body{
-          padding: 2px;
-          background: #fafafa;
-          color: #353353;
-          font-family: Sans-Serif;
-      }
-      table{
-          margin: 0 auto;
-          border: 2px solid #000;
-          border-collapse: collapse;
-          width: 70%;
-          text-align: center;
-          font-size: 17px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+           border: 2px solid #f00056;
+            background: #f1f1f1;
+            color: #353353;
+            font-family: Sans-Serif;
+        }
+        table {
+            margin: 0 auto;
+            border: 2px solid #000;
+            border-collapse: collapse;
+            width: 70%;
+            text-align: center;
+            font-size: 17px;
             -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.29);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.29);
-          
-      }
-      
-      th,td{
-          border: 2px solid #000;
-          padding: 10px;
-          vertical-align: center;
-      }
-      th:nth-child(2n+1),td:nth-child(2n+1){
-          background: rgba(0,0,0,0.1);
-          
-      }
-      caption{
-          padding: 5px 0;
-          text-decoration: underline;
-          
-      }
-      p{
-          text-decoration: underline;
-          text-align: center;
-      }
-      ol{
-          padding: 10px 20px 10px 20px;
-          flex: 50%;
-      }
-      li{
-          padding: 2px;
-      }
-      li:nth-child(2n+1){
-          color: #f00056;
-      }
-      div{
-          display: flex;
-          justify-content: center;
-      }
-      
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.29);
+
+        }
+
+        th,td {
+            border: 2px solid #000;
+            padding: 10px;
+            vertical-align: center;
+        }
+        th:nth-child(2n+1),td:nth-child(2n+1) {
+            background: rgba(0,0,0,0.1);
+
+        }
+
+        h2 {
+            width: 200px;
+            margin: 0 auto;
+            text-decoration: underline;
+            text-align: center;
+            color: #f00056;
+        }
+        ol {
+            padding: 10px 30px;
+            flex: 50%;
+        }
+        li {
+            padding: 2px;
+        }
+        
+        .activities {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-   <table>
-       <caption>My Task</caption>
-       <tr>
-           <th>শনি,সোম,বুধ</th>
-           <th>রবি,মঙ্গল,বৃহঃ</th>
-           <th>শুক্র</th>
-       </tr>
-       <tr>
-           <td>বাংলা সাহিত্য</td>
-           <td>বাংলা ব্যাকরণ</td>
-           <td>বিজ্ঞান</td>
-       </tr>
-              <tr>
-           <td>ইংরেজি সাহিত্য</td>
-           <td>ইংরেজি ব্যাকরণ</td>
-           <td>ICT</td>
-       </tr>
-       <tr>
-           <td>বাংলাদেশ</td>
-           <td>আন্তর্জাতিক</td>
-           <td>ভূগোল</td>
-       </tr>
-      <tr>
-          <td>গনিত</td>
-          <td>গনিত</td>
-          <td>Revision</td>
-      </tr>
-      <tr>
-          <td>বিজ্ঞান</td>
-          <td>ICT</td>
-          <td><br></td>
-      </tr>
-   </table> 
-   <br>
-   <br>
-   <p>Another Activities</p>
-   <div>
-   <ol>
-       <li>Skill Dev</li>
-       <li>Solo Learn</li>
-       <li>Duolingo</li>
-       <li>BCS Prostuti</li>
-       <li>BBC/ Daily Star</li>
-       <li>TED</li>
-     </ol>
-     <ol start="7">
-       <li>Phrasal Verbs</li>
-       <li>Busuu</li>
-       <li>YouTube</li>
-       <li>Facebook</li>
-       <li>Book/ Blog</li>
-       <li>Newspaper/ Current Affairs</li>
-   </ol>
-   </div>
+    <table>
+        <h2>My Task</h2>
+        <tr>
+            <th>শনি,সোম,বুধ</th>
+            <th>রবি,মঙ্গল,বৃহঃ</th>
+            <th>শুক্র</th>
+        </tr>
+        <tr>
+            <td>বাংলা সাহিত্য</td>
+            <td>বাংলা ব্যাকরণ</td>
+            <td>বিজ্ঞান</td>
+        </tr>
+        <tr>
+            <td>ইংরেজি সাহিত্য</td>
+            <td>ইংরেজি ব্যাকরণ</td>
+            <td>ICT</td>
+        </tr>
+        <tr>
+            <td>বাংলাদেশ</td>
+            <td>আন্তর্জাতিক</td>
+            <td>ভূগোল</td>
+        </tr>
+        <tr>
+            <td>গনিত</td>
+            <td>গনিত</td>
+            <td>Revision</td>
+        </tr>
+        <tr>
+            <td>বিজ্ঞান</td>
+            <td>ICT</td>
+            <td><br></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Another Activities</h2>
+    <div class="activities">
+        <ol>
+            <li>Skill Dev</li>
+            <li>Solo Learn</li>
+            <li>Duolingo</li>
+            <li>BCS Prostuti</li>
+            <li>BBC/ Daily Star</li>
+            <li>TED</li>
+        </ol>
+        <ol start="7">
+            <li>Phrasal Verbs</li>
+            <li>Busuu</li>
+            <li>YouTube</li>
+            <li>Facebook</li>
+            <li>Book/ Blog</li>
+            <li>Newspaper/ Current Affairs</li>
+        </ol>
+    </div>
+    <hr>
+    <div class="skill">
+        <ol>
+            <h2>Web Design</h2>
+            <li>Javascript(Basic to Intermediate)</li>
+            <li>Problem Solving With Js</li>
+            <li>jQuery</li>
+            <li>HTML+CSS</li>
+            <li>Responsive Web design</li>
+            <li>SASS+BEM</li>
+            <li>Bootstrap</li>
+            <li>Git & Github</li>
+            <li>Gimp,Incscape,Figma/XD</li>
+            <li>150+ Sections(rrf)</li>
+            <li>PSD to HTML</li>
+            <li>Do Projects</li>
+            <br>
+            <h2>Frontend</h2>
+            <li>Javascript(Advanced Features)</li>
+            <li>React + Redux</li>
+            <li>Vue Js</li>
+            <br>
+            <h2>Backend</h2>
+            <li><span>PHP</span>/Node js/Python</li>
+            <li>OOP</li>
+            <li><span>Laravel</span>/Express Js/Django</li>
+            <li>SQL/<span>MySQL</span>/MongoDB</li>
+        <br>
+
+            <h2>Wordpress</h2>
+            <li>Basic Wordpress</li>
+            <li>Theme Customizations</li>
+            <li>Wordpress Plugins</li>
+            <li>PHP(Basic to Intermediate)</li>
+            <li>OOP PHP</li>
+            <li>Theme Development(Basic)</li>
+            <li>Laravel(Basic to Advanced)</li>
+            <li>Theme Development(Advanced)</li>
+            <li>Plugin Development(Basic to Advanced)</li>
+            <li>Page Builders Widget Development</li>
+            <li>Headless Wordpress with WPGrapql(Basic to Advanced)</li>
+        </ol>
+    </div>
 </body>
 </html>
