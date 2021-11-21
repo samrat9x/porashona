@@ -153,7 +153,7 @@ body {
 
 .quiz_box {
   top: 10px;
-  min-height: 50vh;
+  min-height: 49.5vh;
   overflow: hidden;
   width: 330px;
   background: #fff;
