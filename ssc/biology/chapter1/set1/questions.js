@@ -1,566 +1,220 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [{
-  numb: 1,
-  question: "লাইসোজোমের কাজ কি?",
-  answer: "জীবানু ভক্ষণ করা",
-  options: [
-    "জীবানু ভক্ষণ করা",
-    "খাদ্য তৈরি",
-    "শক্তি উৎপাদন",
-    "আমিষ সংশ্লেষণ"
-  ]
-},
-  {
+    numb: 1,
+    question: "অ্যারিস্টোটল কোন দেশের অধিবাসী ছিলেন?",
+    answer: "গ্রীস",
+    options: [
+        "জার্মানি",
+        "গ্রীস",
+        "আমেরিকা",
+        "ফ্রান্স"
+    ]
+}, {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "জীববিজ্ঞানের জনক কে?",
+    answer: "অ্যারিস্টোটল",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+        "পিথাগোরাস",
+        "ডেমোক্রিটাস",
+        "অ্যারিস্টোটল",
+        "নিউটন"
     ]
-  },
-  {
+}, {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "জীববিজ্ঞানের প্রধান দুটি শাখা কি কি?",
+    answer: "উদ্ভিদ ও প্রাণী",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+        "জড় ও জীব",
+        "কৃষি ও বল",
+        "উদ্ভিদ ও প্রাণী",
+        "পদার্থ ও রসায়ন"
     ]
-  },
-  {
+}, {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "নিচের কোনটি ভৌত জীববিজ্ঞান এর অন্তর্ভুক্ত বিষয়?",
+    answer: "ট্যাক্সোনমি",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+        "জিন প্রযুক্তি",
+        "প্রাণরসায়ন",
+        "পরজীবী বিদ্যা",
+        "ট্যাক্সোনমি"
     ]
-  },
-  {
+}, {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "জীব দেহের বিভিন্ন অঙ্গ প্রত্যঙ্গের জৈব-রাসায়নিক কার্যাদি আলোচিত হয় কোন শাখায়?",
+    answer: "শারীর বিদ্যা",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+        "শারীর বিদ্যা",
+        "জীব ভূগোল",
+        "বিবর্তনবিদ্যা",
+        "ভ্রূণবিদ্যা"
     ]
-  },
-  {
+}, {
     numb: 6,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
+    question: "কোন শাখায় টিস্যুর গঠন বিন্যাস ও কার্যাবলী আলোচনা হয়?",
+    answer: "হিস্টলজি",
     options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
+        "এমব্রায়োলজি",
+        "হিস্টলজি",
+        "সাইটোলজি",
+        "ইকোলজি"
     ]
-  },
-   {
+}, {
     numb: 7,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "এন্ডোক্রাইনোলজি তে কি নিয়ে আলোচনা করা হয়?",
+    answer: "হরমোন",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+        "এনজাইম",
+        "হরমোন",
+        "যকৃত",
+        "কোষ"
     ]
-  },
-  {
+}, {
     numb: 8,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "জীববিজ্ঞানের কোন শাখায় কীটপতঙ্গ নিয়ে আলোচনা করা হয়?",
+    answer: "এন্টোমলজি",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+        "এন্টোমলজি",
+        "ইকোলজি",
+        "এন্ডোক্রাইনোলজি",
+        "মাইক্রোবায়োলজি"
     ]
-  },
-  {
+}, {
     numb: 9,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "ভাইরাস ব্যাকটেরিয়া ছত্রাক সম্পর্কে জানা যায় কোন বিজ্ঞানে?",
+    answer: "অনুজীববিজ্ঞান",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+        "পরজীবী বিদ্যা",
+        "কোষ বিদ্যা",
+        "কীটতত্ত্ব",
+        "অনুজীববিজ্ঞান"
     ]
-  },
-  {
+}, {
     numb: 10,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "জীব জগতকে পাইপ কিংডমে ভাগ করার প্রস্তাব করেন কে?",
+    answer: "আর এইচ হুইটটেকার",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+        "ক্যারোলাস লিনিয়াস",
+        "বেনথাম ও হুকার",
+        "আর এইচ হুইটটেকার",
+        "মারগুলিস"
     ]
-  },
-  {
+}, {
     numb: 11,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
+    question: "কোন রাজ্যের জীব কোষে নিউক্লিওলাস ও নিউক্লিয়ার পর্দা অনুপস্থিত?",
+    answer: "মনেরা",
     options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
+        "মনেরা",
+        "প্রোটিস্টা",
+        "ফানজাই",
+        "প্লান্টি"
     ]
-  },
-   {
+}, {
     numb: 12,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "নীলাভ সবুজ শৈবাল কোন রাজ্যের জীব?",
+    answer: "মনেরা",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+        "মনেরা",
+        "প্রোটিস্টা",
+        "ফানজাই",
+        "প্লান্টি"
     ]
-  },
-  {
+}, {
     numb: 13,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "কোনটি প্রোটিস্টা রাজ্যের অন্তর্ভুক্ত?",
+    answer: "ডায়াটম",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+        "ব্যাকটেরিয়া",
+        "ডায়াটম",
+        "ঈস্ট",
+        "মাশরুম"
     ]
-  },
-  {
-    numb: 14,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  {
-    numb: 15,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  {
-    numb: 16,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
-    options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
-    ]
-  },
-   {
-    numb: 17,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-  {
-    numb: 18,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-  {
-    numb: 19,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  {
-    numb: 20,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  {
-    numb: 21,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
-    options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
-    ]
-  },
-  {
-  numb: 22,
-  question: "লাইসোজোমের কাজ কি?",
-  answer: "জীবানু ভক্ষণ করা",
-  options: [
-    "জীবানু ভক্ষণ করা",
-    "খাদ্য তৈরি",
-    "শক্তি উৎপাদন",
-    "আমিষ সংশ্লেষণ"
-  ]
 },
-  {
-    numb: 23,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-  {
-    numb: 24,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-  {
-    numb: 25,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  {
-    numb: 26,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  {
-    numb: 27,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
-    options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
-    ]
-  },
-   {
-    numb: 28,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-  {
-    numb: 29,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-  {
-    numb: 30,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  {
-    numb: 31,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  {
-    numb: 32,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
-    options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
-    ]
-  },
-   {
-    numb: 33,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-  {
-    numb: 34,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-  {
-    numb: 35,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  {
-    numb: 36,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  {
-    numb: 37,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
-    options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
-    ]
-  },
-   {
-    numb: 38,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-  {
-    numb: 39,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-  {
-    numb: 40,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  {
-    numb: 41,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  {
-    numb: 42,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
-    options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
-    ]
-  },
-   {
-    numb: 43,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-  {
-    numb: 44,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-  {
-    numb: 45,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  {
-    numb: 46,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
-    ]
-  },
-  {
-    numb: 47,
-    question: "ইউরিয়া কোথায় তৈরি হয়?",
-    answer: "বৃক্কে",
-    options: [
-      "যকৃতে",
-      "বৃক্কে",
-      "দেহকোষে",
-      "রেনাল ধমনীতে"
-    ]
-  },
-   {
-    numb: 48,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
-    ]
-  },
-  {
-    numb: 49,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
-    ]
-  },
-  {
-    numb: 50,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
-    ]
-  },
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
+    /* {
+         numb: 14 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 15 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 16 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 17 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 18 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 19 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 20 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 21 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 22 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 23 ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 24  ,
+            question:
+               answer:
+                  options: [
+   ]
+      },{
+         numb: 25 ,
+            question:
+               answer:
+                  options: [
+   ]
+      }, */
+    // you can uncomment the below codes and make duplicate as more as you want to add question
+    // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
 
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
+    //   {
+    //   numb: 6,
+    //   question: "Your Question is Here",
+    //   answer: "Correct answer of the question is here",
+    //   options: [
+    //     "Option 1",
+    //     "option 2",
+    //     "option 3",
+    //     "option 4"
+    //   ]
+    // },
 ];
