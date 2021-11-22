@@ -12,7 +12,8 @@
             box-sizing: border-box;
         }
         body {
-           border: 2px solid #f00056;
+            padding: 5px;
+            border: 2px solid #f00056;
             background: #f1f1f1;
             color: #353353;
             font-family: Sans-Serif;
@@ -53,12 +54,39 @@
         li {
             padding: 2px;
         }
-        span{
+        span {
             color: #FF00AD;
         }
+        
+        /* timer */
+        p{
+            text-align: center;
+            margin-bottom: 3px;
+        }
+        p input{
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #demo,.demo{
+            font-weight: bolder;
+        }
+        
     </style>
 </head>
-<body>
+<body Onload="startclock();">
+    <form name="dateform">
+        <p>
+            <input type="text" name="a" size="1" value=""><b> years,</b>
+        <input type="text" name="b" size="1" value=""><b> month,</b>
+        <input type="text" name="c" size="1" value=""><b> days</b>
+        </p>
+        
+        <p id="demo"></p>
+        
+        <p class="demo">left until 11/11/2024</p>
+    </form>
+<br>
     <table>
         <h2>My Task</h2>
         <tr>
@@ -140,7 +168,7 @@
             <li>OOP</li>
             <li><span>Laravel</span>/Express Js/Django</li>
             <li>SQL/<span>MySQL</span>/MongoDB</li>
-        <br>
+            <br>
 
             <h2>Wordpress</h2>
             <li>Basic Wordpress</li>
@@ -156,5 +184,86 @@
             <li>Headless Wordpress with WPGrapql(Basic to Advanced)</li>
         </ol>
     </div>
+
+
+
+
+
+
+
+    <SCRIPT LANGUAGE="JavaScript">
+        var Temp2;
+        var timerID = null;
+        var timerRunning = false;
+        function arry() {
+            this.length = 12;
+            this[0] = 31;
+            this[1] = 28;
+            this[2] = 31;
+            this[3] = 30;
+            this[4] = 31;
+            this[5] = 30;
+            this[6] = 31;
+            this[7] = 31;
+            this[8] = 30;
+            this[9] = 31;
+            this[10] = 30;
+            this[11] = 31;
+        }
+        var date = new arry();
+
+        function stopclock() {
+            if (timerRunning)
+                clearTimeout(timerID);
+            timerRunning = false;
+        }
+
+        function startclock() {
+            stopclock();
+            showtime();
+        }
+
+        function showtime() {
+            now = new Date();
+            var CurMonth = now.getMonth();
+            var CurDate = now.getDate();
+            var CurYear = now.getFullYear();
+            now = null;
+            if (11 < CurDate) {
+                CurDate -= date[CurMonth]; CurMonth++;
+            }
+            if (10 < CurMonth) {
+                CurMonth -= 12; CurYear++;
+            }
+
+            var Yearleft = 2024 - CurYear;
+            var Monthleft = 10 - CurMonth;
+            var Dateleft = 11 - CurDate;
+
+            document.dateform.a.value = Yearleft;
+            document.dateform.b.value = Monthleft;
+            document.dateform.c.value = Dateleft;
+
+            timerID = setTimeout("showtime()", 1000);
+            timerRunning = true;
+        }
+    </script>
+    <script>
+        var countDownDate = new Date("Nov 11, 2024 23:59:59").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 *24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 *60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("demo").innerHTML = hours + "hours " + minutes + "min " + seconds + "sec ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED"
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
