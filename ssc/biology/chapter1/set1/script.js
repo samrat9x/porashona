@@ -107,6 +107,8 @@ next_btn.onclick = ()=> {
         clearInterval(counterLine); //clear counterLine
         timeReset();
         showResult(); //calling showResult function
+        document.getElementById('time').style.color = '#fff';
+        document.getElementById('redTime').style.color = '#004085';
     }
 }
 
@@ -247,6 +249,7 @@ function queCounter(index) {
 //Total Countdown
 
 var mig;
+var tig;
 //Declare function to start timer
 function startTimers(duration, display) {
     var timers = duration,
@@ -265,21 +268,30 @@ function startTimers(duration, display) {
         if (--timers < 0) {
             timers = 0
         }
+        if (minutes < 1) {
+            document.getElementById('redTime').style.color = 'red';
+            document.getElementById('time').style.color = 'red';
+        }
     },
 
         1000)
 
     //Declare variable to time in miliseconds and set function for window alert
-    var totalMins = 720000;
+    var totalMins = 720040;
 
-    setTimeout(function () {
+    tig = setTimeout(function () {
         alert("আপনার সময় শেষ!! ফলাফল দেখতে ok বাটনে ক্লিক করুন।");
+        timeReset();
+        clearInterval(counter);
+        clearInterval(counterLine);
+        showResult();
     },
         totalMins);
 }
 
 function timeReset() {
     clearInterval(mig);
+    clearTimeout(tig);
 }
 
 //Sets the counter to three minutes
