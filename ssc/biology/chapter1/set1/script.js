@@ -97,9 +97,9 @@ next_btn.onclick = ()=> {
         showQuetions(que_count); //calling showQestions function
         queCounter(que_numb); //passing que_numb value to queCounter
         clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
+      //  clearInterval(counterLine); //clear counterLine
         startTimer(timeValue); //calling startTimer function
-        startTimerLine(widthValue); //calling startTimerLine function
+    //    startTimerLine(widthValue); //calling startTimerLine function
         timeText.textContent = "Time Left"; //change the timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     } else {
@@ -139,7 +139,7 @@ let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 //if user clicked on option
 function optionSelected(answer) {
     clearInterval(counter); //clear counter
-    clearInterval(counterLine); //clear counterLine
+  //  clearInterval(counterLine); //clear counterLine
     let userAns = answer.textContent; //getting user selected option
     let correcAns = questions[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
@@ -285,6 +285,8 @@ function startTimers(duration, display) {
         clearInterval(counter);
         clearInterval(counterLine);
         showResult();
+        document.getElementById('redTime').style.color = '#004085';
+        document.getElementById('time').style.color = '#fff';
     },
         totalMins);
 }
