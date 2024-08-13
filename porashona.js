@@ -49,7 +49,7 @@ function overlay() {
   document.getElementById("overlay").style.display = "none";
   document.getElementById("popup").style.display = "none";
 }
-
+ 
 //quiz
 function q1() {
   document.getElementById("q1").style.display = "block";
