@@ -1,4 +1,4 @@
-// Element Catcher Function
+// Element Catcher Function with id
 function $(e){
   return document.querySelector(e);
 }
